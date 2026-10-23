@@ -69,3 +69,5 @@ body[data-state="intro"] .bottom-bar,body[data-state="revealing"] .bottom-bar{vi
 @keyframes shadow-breeze-soft{0%,100%{transform:skewX(0) translateX(0);opacity:.12}45%{transform:skewX(.6deg) translateX(3px);opacity:.14}72%{transform:skewX(.2deg) translateX(1px);opacity:.13}}
 body[data-state="intro"] .world *,body.is-hidden .world *{animation-play-state:paused!important}
 @media(prefers-reduced-motion:reduce){.tree-back,.tree-front,.tree-shadow,.desk-shadow{animation:none}}
+/* Let clock clicks pass through the empty space between header controls. */
+.topbar{pointer-events:none}.topbar .brand,.topbar nav{pointer-events:auto}
